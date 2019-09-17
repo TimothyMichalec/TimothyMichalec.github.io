@@ -6,13 +6,72 @@ Colorblind safe color palette from colorbrewer2.org.
 #92c5de - light blue
 #0571b0 - blue
 */
-
+/*
+Sets all the margin properties in one declaration
+*/
 body  {
   background-color: #92c5de;
   color: #0571b0;
   text-align:center;
+  margin: 0;
 }
-
+/*
+Sets the color of text
+A shorthand property for all the padding-* properties
+Sets all the margin properties in one declaration
+*/
 h1 {
   color: #f7f7f7;
+  padding: 5px;
+  margin: 0;
+}
+/*
+Specifies the background color of an element
+Sets the maximum width of an element
+Sets all the margin properties in one declaration
+Sets the height of an element
+A shorthand property for border-width, border-style and border-color
+A shorthand property for the four border-*-radius properties
+Specifies what happens if content overflows an element's box
+*/
+#body-container {
+  background-color: #f7f7f7;
+  max-width: 1000px;
+  margin: auto;
+  height: 100vh;
+  border: 2px solid #f7f7f7;
+  border-radius: 25px;
+  overflow: hidden;
+}
+/*
+Specifies the background color of an element
+*/
+#header {
+  background-color: #0571b0;
+}
+/*
+Specifies whether or not a box should float
+A shorthand property for all the padding-* properties
+Specifies the font size of text
+*/
+#profile-picture {
+  float: left;
+}
+
+#welcome-text {
+  padding-top: 25px;
+  font-size: 25px;
+}
+/*
+Specifies the horizontal alignment of text
+Specifies the font size of text
+Specifies the type of positioning method used for an element (static, relative,
+ absolute or fixed)
+ Specifies the left position of a positioned element
+ */
+#research-interests {
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+  left: 50px;
 }
