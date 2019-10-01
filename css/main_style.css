@@ -82,3 +82,10 @@ Specifies the type of positioning method used for an element (static, relative,
   text-align: center;
   bottom: 20px;
 }
+/*add webmap-reviews to the css and aligned the text to the left, added a font
+size of 25px, and postioned it relative. */
+#webmap-reviews{
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+}
