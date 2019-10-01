@@ -19,7 +19,6 @@
    message = "<h1>Hello, welcome to my webpage, " + user_name + "!</h1>"
    return message
  }
- document.write(welcome());
 //x = 22;
 //const y = 33;
 //document.writeln(x + y);
