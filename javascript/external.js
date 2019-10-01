@@ -10,6 +10,16 @@
  //A prompt box is used to prompt users to input a value before entering a page.
 //user_name = window.prompt("Please enter your name", "Type your name here");
  //document.write(user_name);
+ var webmaps =
+   [
+     ["Yelp",
+      "https://www.yelp.com/",
+      "The primary purpose of this site is to help provide the users with specific information that they are searching for. The particular intrest the user has in mind such as, hamburgers in San Marcos, will provide a list of every hamburger joint in town and the specific map location along with this business. Yelp uses GIS techniques by storing data and using search queries to limit your search results to what you are looking for. "
+    ],
+    ["Craigslist",
+     "https://sanmarcos.craigslist.org/",
+     "Craigslist, this as well as yelp is another site to provide users with the information they desire to search for by using queries to define the search results. The website uses a number of different filters to refine the results to exactly what the user intends to find. This website allows individuals to find search results easily but lacks a proper map as well."]
+   ];
  function welcome()
  {
    let a = "Please enter your name.";
@@ -23,17 +33,18 @@
  function webmap_table()
  {
    document.write("<table width=100%>");
-   for (var row=0; row < 2; row++)
+   for (var row=0; row < webmaps.length; row++)
  {
-   document.write("<tr>"); 
-   for (var column=0; column < 3; column++)
+   document.write("<tr>");
+   for (var column=0; column < webmaps[0].length; column++)
   {
-    document.write("<td>" + row + "," + column + "</td>");
+    document.write("<td>" + webmaps[row][column] + "</td>");
   }
   document.write("</tr>");
 }
 document.write("</table>");
 }
+
 //x = 22;
 //const y = 33;
 //document.writeln(x + y);
