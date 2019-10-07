@@ -77,9 +77,9 @@ Specifies the type of positioning method used for an element (static, relative,
 }
 
 #copyright {
-  position: absolute;
+  position: fixed;
   width: 1000px;
-  text-align: center;
+  text-align: bottom;
   bottom: 20px;
 }
 /*add webmap-reviews to the css and aligned the text to the left, added a font
