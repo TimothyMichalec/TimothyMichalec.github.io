@@ -89,7 +89,7 @@
         var value = dom.byId("valSelect");
 
         var popUrl = "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/ArcGIS/rest/services/CaliforniaCities/FeatureServer/0";
-
+//pop up names for the queries selection//
         var popupTemplate = {
           title: "{City}",
           fieldInfos: [{
@@ -130,7 +130,7 @@
           view.ui.add("optionsDiv", "bottom-right");
           on(dom.byId("doBtn"), "click", doQuery);
         });
-
+//added query function to webmap//
         function doQuery() {
           resultsLayer.removeAll();
           params.where = attributeName.value + expressionSign.value + value.value;
@@ -163,6 +163,7 @@
       </script>
   </head>
   <body>
+    //the query function for the map to run based on users selection//
     <div id="viewDiv"></div>
     <div class="esri-widget" id="optionsDiv">
     <h2>Cities in California</h2>
@@ -174,6 +175,7 @@
       <option value=">">is greater than</option>
       <option value="<">is less than</option>
     </select>
+    //variables for the query to run//
     <select class="esri-widget" id="valSelect">
       <option value="10000">10,000</option>
       <option value="50000">50,000</option>

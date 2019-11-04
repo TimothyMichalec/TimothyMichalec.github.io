@@ -25,6 +25,7 @@
         var TransportationLayer = new TileLayer({
           url: "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer"
     });
+    <!--added two new variables to the map for later use for queries-->
     var CitiesRenderer = {
       type: "simple", // autocasts as new SimpleMarkerSymbol()
       symbol: {
@@ -39,6 +40,7 @@
     },
     label: "Cities"
   };
+  <!--added two new variables to the map for later use for queries-->
   var CitiesLayer = new MapImageLayer({
     url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
     sublayers: [
@@ -49,6 +51,7 @@
       }
     ]
   });
+  <!--added new basemap-->
         var map = new Map({
           basemap: "dark-gray",
           layers: [TransportationLayer, CitiesLayer]
